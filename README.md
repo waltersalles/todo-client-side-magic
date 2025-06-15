@@ -25,13 +25,4 @@ O objetivo foi construir uma aplicação interativa e funcional sem o uso de fra
 * **HTML5 Semântico:** Estrutura organizada para o conteúdo da aplicação.
 * **CSS3:** Estilização para a aparência da lista e dos elementos interativos.
 
-## 🚀 Visualização (Live Demo)
-
-Você pode interagir com a aplicação funcionando ao vivo através do link abaixo:
-
-**[Clique aqui para ver o projeto ao vivo](https://waltersalles.github.io/todo-client-side-magic/)**
-
-*(Lembrete: Para que este link funcione, ative o **GitHub Pages** nas configurações do repositório, como fizemos para o projeto anterior.)*
-
----
 Desenvolvido por Walter Salles.
