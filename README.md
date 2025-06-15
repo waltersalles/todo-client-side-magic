@@ -1,66 +1,37 @@
-# Plataforma de Manual Operacional Interativo (manual-flow-control)
+# To-Do List: Lógica e Manipulação do DOM com JavaScript
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Este repositório contém o código de uma plataforma web completa projetada para substituir manuais operacionais estáticos por um sistema vivo, interativo e de fácil gerenciamento. A aplicação centraliza informações críticas, otimiza a colaboração entre equipes e simplifica processos de auditoria.
-
-Este é um dos principais projetos do meu portfólio, demonstrando a capacidade de construir uma aplicação full-stack com regras de negócio complexas.
+Este repositório contém uma aplicação de "Lista de Tarefas" (To-Do List) desenvolvida com foco total em **JavaScript puro (Vanilla JS)**. O projeto foi criado para demonstrar e solidificar habilidades essenciais de lógica de programação e manipulação dinâmica de elementos da página (DOM).
 
 ## 🎯 Objetivo do Projeto
 
-O objetivo é fornecer uma solução onde manuais operacionais possam ser facilmente criados, editados e consultados, permitindo a interação dos usuários através de comentários e a avaliação de auditores, tudo em um ambiente seguro e com controle de acesso.
+O objetivo foi construir uma aplicação interativa e funcional sem o uso de frameworks ou bibliotecas externas, provando o domínio dos fundamentos do desenvolvimento web frontend.
 
-## ✨ Principais Funcionalidades
+## ✨ Funcionalidades Implementadas
 
-* **Painel de Controle (Dashboard):** Página inicial com acesso rápido às seções do manual e uma barra de busca global.
-* **Sistema de Autenticação com 3 Níveis de Acesso:**
-    * **Usuário Padrão:** Visualiza o manual, faz comentários e sugere documentos.
-    * **Administrador:** Controle total sobre conteúdo, usuários, comentários e documentos.
-    * **Auditor:** Perfil especializado para adicionar notas de auditoria confidenciais.
-* **Edição de Conteúdo "In-line":** Administradores podem editar o texto diretamente na página, sem a necessidade de um painel de administração complexo, agilizando as atualizações.
-* **Sistema de Comentários com Moderação:** Usuários podem comentar nas seções, mas os comentários só se tornam públicos após a aprovação de um administrador.
-* **Módulo de Auditoria:** Seção dedicada em cada página, visível apenas para Auditores e Administradores, para anotações e avaliações.
-* **Gerenciamento de Documentos:** Funcionalidades para upload, download e sugestão de novos documentos de apoio.
+* **Adicionar Tarefas:** Campo de texto para inserir novas tarefas que são adicionadas à lista dinamicamente.
+* **Remover Tarefas:** Cada tarefa possui um botão para ser excluída da lista instantaneamente.
+* **Marcar como Concluída:** Funcionalidade de `checkbox` que aplica um estilo de "texto riscado" na tarefa, indicando sua conclusão, sem removê-la da lista.
+* **Interface Limpa:** Layout simples e intuitivo, focado na usabilidade.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-* **Frontend:**
-    * **React:** Biblioteca para construção da interface de usuário reativa e componentizada.
-    * **Tailwind CSS:** Framework CSS para estilização rápida, moderna e responsiva.
-* **Backend & Banco de Dados (BaaS):**
-    * **Supabase:** Utilizado como a solução de backend completa, fornecendo:
-        * **Banco de Dados PostgreSQL:** Para armazenar todo o conteúdo, usuários, comentários e notas.
-        * **Autenticação:** Gerenciamento de login, senhas e perfis de usuário.
-        * **Storage:** Para o upload e armazenamento dos documentos.
-        * **Row Level Security (RLS):** Para implementar as regras de permissão complexas entre os diferentes tipos de usuário.
+* **JavaScript (ES6+):** Lógica principal da aplicação, incluindo funções, manipulação de arrays e gerenciamento de eventos.
+* **Manipulação do DOM:** Criação, seleção, modificação e remoção de elementos HTML em tempo real.
+* **Event Listeners:** Captura de interações do usuário (cliques em botões, submissão de formulários) para acionar as funcionalidades.
+* **HTML5 Semântico:** Estrutura organizada para o conteúdo da aplicação.
+* **CSS3:** Estilização para a aparência da lista e dos elementos interativos.
 
-## 🚀 Como Executar o Projeto (Instruções Futuras)
+## 🚀 Visualização (Live Demo)
 
-*(Esta seção é um placeholder para quando você tiver o projeto funcional)*
+Você pode interagir com a aplicação funcionando ao vivo através do link abaixo:
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/waltersalles/manual-flow-control.git](https://github.com/waltersalles/manual-flow-control.git)
-    ```
-2.  **Instale as dependências:**
-    ```bash
-    cd manual-flow-control
-    npm install
-    ```
-3.  **Configure as variáveis de ambiente:**
-    * Crie um arquivo `.env.local` na raiz do projeto.
-    * Adicione suas chaves do Supabase (URL e Anon Key).
-    ```env
-    REACT_APP_SUPABASE_URL=SUA_URL_AQUI
-    REACT_APP_SUPABASE_ANON_KEY=SUA_CHAVE_ANON_AQUI
-    ```
-4.  **Inicie o servidor de desenvolvimento:**
-    ```bash
-    npm start
-    ```
+**[Clique aqui para ver o projeto ao vivo](https://waltersalles.github.io/todo-client-side-magic/)**
+
+*(Lembrete: Para que este link funcione, ative o **GitHub Pages** nas configurações do repositório, como fizemos para o projeto anterior.)*
 
 ---
-
 Desenvolvido por Walter Salles.
